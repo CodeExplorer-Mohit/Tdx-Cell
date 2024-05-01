@@ -1,0 +1,276 @@
+* {
+    font-family: 'Gordita', sans-serif;
+}
+
+.font-type {
+    font-family: 'Gordita', sans-serif;
+}
+
+.hoverOutlineBlue {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hoverOutlineBlue:focus {
+    outline: 2px solid #141727aa;
+    box-shadow: 0px 0px 5px #141727aa;
+}
+
+.PhotoUploadLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #aaaaaa11;
+    /* border: dashed 1px #67748e; */
+    transition: all 0.1s ease-in-out;
+    overflow: hidden;
+}
+
+.PhotoUploadLabel:hover {
+    background-color: #000029;
+    color: #ffffff;
+}
+
+.PhotoUploadLabel::before {
+    content: '↑';
+    position: absolute;
+    left: 15%;
+    font-size: 17px;
+    left: -50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.PhotoUploadLabel:hover::before {
+    left: 20%;
+    color: #ffffff;
+}
+
+.identityProofInput {
+    border: none;
+    outline: none;
+}
+
+.identityProofInput::before {
+    border: none;
+}
+
+.checkAvilBtn {
+    position: relative;
+    color: #ffffff;
+    width: 220px;
+    height: 42px;
+    overflow: hidden;
+    z-index: 100;
+    font-weight: 600;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 5px #000029;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+    transition-delay: 0.2s;
+}
+
+.checkAvilBtn::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.3), transparent);
+    transform: skew(45deg) translateX(0);
+    transition: all 0.2s ease;
+}
+
+.checkAvilBtn:hover::before {
+    transform: skew(45deg) translateX(200%);
+}
+
+.checkAvilBtn:hover {
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3), 0 0 3rem #5d54a4,
+        0 0 5rem rgba(255, 255, 255, 0.5);
+}
+
+.RegInstBtn {
+    background: linear-gradient(310deg, #141727 0%, #3a416f 100%);
+    transition: all 0.2s ease-in-out;
+}
+
+.RegInstBtn:hover {
+    transform: scale(1.02);
+}
+
+.RegInstBtn:active {
+    background: linear-gradient(310deg, #141727cc 0%, #3a416fcc 100%);
+}
+
+.containerChBox {
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    margin-bottom: 12px;
+    padding-left: 35px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkMark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cellCheckBox {
+    position: absolute;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.containerChBox input:checked ~ .checkMark::after {
+    display: block;
+}
+.containerChBox input:checked ~ .checkMark {
+    background-color: #fff;
+}
+
+.containerChBox .checkMark::after {
+    content: '✓';
+    position: absolute;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000029;
+    display: none;
+}
+
+.ShapBox {
+    height: 330vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.whiteBoxShap1 {
+    z-index: 100;
+    width: 1800px;
+    height: 1800px;
+    position: absolute;
+    top: 0;
+    border-radius: 0px 90px 0px 0px;
+    background-color: rgba(255, 255, 255, 1);
+    transform: rotate(45deg) translateX(-800px) translateY(550px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tallBoxShap2 {
+    z-index: 90;
+    width: 500px;
+    height: 2000px;
+    position: absolute;
+    top: 80vh;
+    left: 500px;
+    transform: rotate(45deg) translateX(-100px) translatey(-550px);
+    border-radius: 90px;
+    background: linear-gradient(270deg, #0875dc, #0cbaef);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* .boxShap3{
+    background-color: #6c63ac;
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 90px;
+    transform: rotate(45deg) translateX(-400px) translateY(-400px);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+} */
+/* 
+.boxShap4{
+    background-color: #6c63ac;
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    right: 0;
+    top: 300vh;
+    border-radius: 90px;
+    transform: rotate(45deg) translateX(-100px) translateY(-390px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+} */
+
+@media only screen and (max-width: 600px) {
+    .ShapBox {
+        max-height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    .whiteBoxShap1 {
+        z-index: 100;
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        top: 0;
+        border-radius: 0px 50px 0px 0px;
+        background-color: #fff;
+        transform: translateX(-360px) translateY(-100px) rotate(45deg);
+    }
+
+    .tallBoxShap2 {
+        z-index: 90;
+        width: 250px;
+        height: 800px;
+        position: absolute;
+        top: 10vh;
+        transform: rotate(45deg) translateX(-350px) translatey(-40px);
+        border-radius: 50px;
+        background: linear-gradient(270deg, #0875dc, #0cbaef);
+    }
+    /* 
+    .boxShap3{
+        background-color: #6c63ac;
+        width: 250px;
+        height: 280px;
+        position: absolute;
+        top: 0;
+        right: 80px;
+        border-radius: 50px;
+        transform: rotate(45deg) translateX(-60px) translateY(-245px);
+    } */
+
+    /* .boxShap4{
+        background-color: #6c63ac;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 50px;
+        transform: rotate(45deg) translateX(450px) translateY(350px);
+    } */
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.cdnfonts.com/css/gordita');
+
+* {
+    font-family: 'Gordita', sans-serif;
+}
+
+.loadMoreBTN {
+    position: relative;
+    background-color: rgb(12, 185, 239, 0.5);
+    color: #222;
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+    z-index: 100;
+    font-weight: 600;
+    border-radius: 15px;
+    box-shadow: 0 0 10 px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    transition-delay: 0.3s;
+}
+
+.imgHoverEffect {
+    cursor: pointer;
+}
+
+.blogBoxImgTransform {
+    position: relative;
+}
+
+.blogImgTransform {
+    transition: all 0.3s ease;
+}
+
+.blogTransformBox {
+    position: absolute;
+    background: #f6f6f8;
+    width: 40px;
+    height: 40px;
+    bottom: -40px;
+    left: -40px;
+    transform: rotate(90deg);
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.imgHoverEffect:hover .blogImgTransform {
+    transform: translateY(-5px);
+}
+
+.imgHoverEffect:hover .blogTransformBox {
+    bottom: 0;
+    left: 0;
+}
+
+.BlogMenuBTN {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.BlogMenuBTN::before {
+    content: '';
+    width: 80%;
+    height: 2.5px;
+    left: aut o;
+    bottom: -1px;
+    position: absolute;
+    background-color: #333;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.cardShadowEffect {
+    transition: all 0.2s ease;
+}
+
+.cardShadowEffect:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.blogCategoryBtn {
+    color: #fff;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.blogCategoryBtn:hover {
+    color: #2b90e0;
+    border-color: #2b90e0;
+}

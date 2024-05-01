@@ -1,0 +1,72 @@
+.eventBannerBg{
+    background-image: url('https://img.freepik.com/premium-vector/modern-blue-hexagon-banner-background-suit-medical-futuristic-technology-digital-banner_181182-20279.jpg?w=1380');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.eventHeadPera{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventHeadPera::before{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 6%;
+    left: -15%;
+    top: auto;
+    border-radius: 2px;
+    background-color: #1a4ca5;
+}
+
+.eventHeadPera::after{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 6%;
+    right: -15%;
+    top: auto;
+    border-radius: 2px;
+    background-color: #1a4ca5;
+}
+
+.eventOtherDisc{
+    position: relative;
+}
+
+.eventOtherDisc::before{
+    position: absolute;
+    content: '';
+    left: -10%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/src/Events/badgeLeft.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.eventOtherDisc::after{
+    position: absolute;
+    content: '';
+    left: 10%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/src/Events/badgeRight.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.eventBannerBgTwo{
+    background-image: url('https://img.freepik.com/free-vector/banner-with-low-poly-design_1048-12618.jpg?w=1380&t=st=1681657796~exp=1681658396~hmac=b6eb688834f4b99bb40000503f6f69d2dc8a4664cea4af92a1af7e80c3bbcb3b');
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    /* background-size: cover; */
+}

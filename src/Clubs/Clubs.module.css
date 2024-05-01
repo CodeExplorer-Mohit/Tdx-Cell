@@ -1,0 +1,18 @@
+.iconsEffect {
+    animation-name: iconsEffect;
+    animation-timing-function: linear;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    transform: translateY(0%);
+    animation-direction: reverse;
+}
+
+@keyframes iconsEffect {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(150%);
+    }
+}
